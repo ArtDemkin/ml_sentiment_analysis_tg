@@ -2,12 +2,10 @@ from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
-from telethon.tl.types import PeerChannel
-import zipfile
-import csv
-import numpy as np
-import pickle
- 
+import pickle as pkl
+from transformers import pipeline
+import streamlit as st
+
 api_id = 28931325
 api_hash = "418f5c4490b62cc092a84afa3b7c788c"
 phone = "+79778210737"
@@ -46,7 +44,7 @@ all_participants = []
 all_participants = client.get_participants(target_group)
 print("Сохраняем данные в файл...")
 with open("members.pkl", "w", encoding="UTF-8", newline='\n') as f:
-   writer = csv.writer(f,delimiter=",",lineterminator="\n")
+   writer = pkl.writer(f,delimiter=",",lineterminator="\n")
    writer.writerow(["username", "name","group"])
    for user in all_participants:
        if user.username:
@@ -93,7 +91,15 @@ while True:
   
 print("Сохраняем данные в файл...")
 with open("chats.pkl", "w", encoding="UTF-8", newline='\n') as f:
-   writer = csv.writer(f, delimiter=",", lineterminator="\n")
+   writer = pkl.writer(f, delimiter=",", lineterminator="\n")
    for message in all_messages:
        writer.writerow([message])  
 print('Парсинг сообщений группы успешно выполнен.')
+
+classifier = pipeline("sentiment-analysis", "blanchefort/rubert-base-cased-sentiment")
+df = open('chats.pkl', 'r+', encoding="UTF-8")
+st.title('Классификация изображений')
+for line in df:
+    category = classifier([line])
+    print(line, category)
+    st.write(line, category)
