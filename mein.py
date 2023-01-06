@@ -5,7 +5,8 @@ from telethon.tl.functions.messages import GetHistoryRequest
 from transformers import pipeline
 import streamlit as st
 import csv
-
+import pandas as pd
+import numpy as np
 api_id = 28931325
 api_hash = "418f5c4490b62cc092a84afa3b7c788c"
 phone = "+79778210737"
