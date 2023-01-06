@@ -1,4 +1,3 @@
-import pandas as pd
 import streamlit as st
 from transformers import pipeline
 classifier = pipeline("sentiment-analysis", "blanchefort/rubert-base-cased-sentiment")
