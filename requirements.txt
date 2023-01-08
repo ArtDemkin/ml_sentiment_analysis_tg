@@ -1,5 +1,6 @@
-fastapi
 uvicorn
 transformers
 torch
 httpx
+csv
+telethon
