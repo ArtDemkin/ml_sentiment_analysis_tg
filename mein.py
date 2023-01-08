@@ -4,6 +4,7 @@ from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
 from transformers import pipeline
 import csv
+import streamlit as st
 api_id = 28931325
 api_hash = "418f5c4490b62cc092a84afa3b7c788c"
 phone = "+79778210737"
@@ -97,4 +98,4 @@ classifier = pipeline("sentiment-analysis", "blanchefort/rubert-base-cased-senti
 df = open('chats.csv', 'r+', encoding="UTF-8")
 for line in df:
     category = classifier([line])
-    print(line, category)
+    st.write(line, category)
