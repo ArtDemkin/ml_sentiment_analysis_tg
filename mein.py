@@ -2,13 +2,12 @@ from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
-from transformers import pipeline
 import csv
-import streamlit as st
 api_id = 28931325
-api_hash = "418f5c4490b62cc092a84afa3b7c788c"
-phone = "+79778210737"
- 
+api_hash = '418f5c4490b62cc092a84afa3b7c788c'
+phone = '+79778210737'
+
+
 client = TelegramClient(phone, api_id, api_hash)
  
 client.start()
@@ -89,13 +88,8 @@ while True:
        break
   
 print("Сохраняем данные в файл...")
-with open("chats.csv", "w", encoding="UTF-8", newline='\n') as f:
+with open("chats.csv", "w", encoding="UTF-8", newline='\n'):
    writer = csv.writer(f, delimiter=",", lineterminator="\n")
    for message in all_messages:
        writer.writerow([message])  
 print('Парсинг сообщений группы успешно выполнен.')
-classifier = pipeline("sentiment-analysis", "blanchefort/rubert-base-cased-sentiment")
-df = open('chats.csv', 'r+', encoding="UTF-8")
-for line in df:
-    category = classifier([line])
-    st.write(line, category)
