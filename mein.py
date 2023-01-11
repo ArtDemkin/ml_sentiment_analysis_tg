@@ -1,15 +1,16 @@
+from xmlrpc.client import DateTime
 from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
+from telethon.tl.types import PeerChannel
 import csv
 api_id = 28931325
 api_hash = '418f5c4490b62cc092a84afa3b7c788c'
 phone = '+79778210737'
 
-
 client = TelegramClient(phone, api_id, api_hash)
- 
+
 client.start()
  
 chats = []
