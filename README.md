@@ -10,4 +10,4 @@ parser.py - модуль парсинга сообщений Telegram групп
 [Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-sentiment-analysis-tg-st-app-ln9oar.streamlit.app/)
 
 Участники:
-Демкин Артем Анреевич
+Демкин Артем Андреевич
