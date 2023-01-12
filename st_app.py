@@ -1,3 +1,4 @@
+import io
 from transformers import pipeline
 import streamlit as st
 classifier = pipeline("sentiment-analysis", "blanchefort/rubert-base-cased-sentiment")
