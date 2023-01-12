@@ -3,5 +3,4 @@ transformers
 tensorflow
 httpx
 telethon
-xmlrpc
 streamlit
