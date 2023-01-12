@@ -7,7 +7,7 @@ parser.py - модуль парсинга сообщений Telegram групп
 
 В репозитории размещен файл chats.csv, содержащий 100 предобработанных сообщений открытого Telegram-чата, [расположенного по адресу](https://t.me/+KxlX36pb-3hjMjRi) 
 
-[Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-fastapi-sentiment-analysis-tg-st-app-m4hbkm.streamlit.app/)
+[Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-sentiment-analysis-tg-st-app-ln9oar.streamlit.app/)
 
 Участники:
 Демкин Артем Анреевич
