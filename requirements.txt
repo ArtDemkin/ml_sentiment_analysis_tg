@@ -1,6 +1,8 @@
 uvicorn
 transformers
-torch
+tensorflow
 httpx
 csv
 telethon
+xmlrpc
+streamlit
