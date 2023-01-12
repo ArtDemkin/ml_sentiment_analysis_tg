@@ -2,7 +2,6 @@ uvicorn
 transformers
 tensorflow
 httpx
-csv
 telethon
 xmlrpc
 streamlit
