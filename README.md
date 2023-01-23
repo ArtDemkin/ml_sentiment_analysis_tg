@@ -7,6 +7,11 @@
 
 В репозитории размещен файл [chats.csv](https://github.com/ArtDemkin/ml_sentiment_analysis_tg/blob/main/chats.csv), содержащий 100 предобработанных сообщений открытого [Telegram-чата](https://t.me/+KxlX36pb-3hjMjRi) 
 
+Используются библиотеки:
+
+- [TensorFlow](https://www.tensorflow.org/).
+- [Streamlit](https://streamlit.io/).
+- [Transformers](https://huggingface.co/docs/transformers/index).
 [Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-sentiment-analysis-tg-st-app-b5njig.streamlit.app/)
 
 Участники:
