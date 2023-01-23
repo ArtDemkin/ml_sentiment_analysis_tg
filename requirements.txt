@@ -1,4 +1,3 @@
-uvicorn
 transformers
 tensorflow
 httpx
