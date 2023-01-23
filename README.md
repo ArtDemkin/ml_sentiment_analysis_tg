@@ -17,4 +17,4 @@
 [Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-sentiment-analysis-tg-st-app-b5njig.streamlit.app/)
 
 Участники:
-Демкин Артем Андреевич
+Дёмкин Артем Андреевич
