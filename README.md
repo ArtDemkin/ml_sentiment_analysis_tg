@@ -12,6 +12,7 @@
 - [TensorFlow](https://www.tensorflow.org/).
 - [Streamlit](https://streamlit.io/).
 - [Transformers](https://huggingface.co/docs/transformers/index).
+- [Telethon](https://pypi.org/project/Telethon/).
 
 [Ссылка на равёрнутое приложение на платформе streamlit](https://artdemkin-ml-sentiment-analysis-tg-st-app-b5njig.streamlit.app/)
 
