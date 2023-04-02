@@ -5,9 +5,9 @@ from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.types import PeerChannel
 import csv
-api_id = #вводим свои данные
-api_hash = '' #вводим свои данные
-phone = '+' #вводим свои данные
+api_id = 123 #вводим свои данные
+api_hash = '123' #вводим свои данные
+phone = '+123' #вводим свои данные
 
 client = TelegramClient(phone, api_id, api_hash)
 
