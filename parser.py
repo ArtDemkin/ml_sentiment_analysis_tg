@@ -1,9 +1,7 @@
-from xmlrpc.client import DateTime
 from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 from telethon.tl.functions.messages import GetHistoryRequest
-from telethon.tl.types import PeerChannel
 import csv
 api_id = 123 #вводим свои данные
 api_hash = '123' #вводим свои данные
