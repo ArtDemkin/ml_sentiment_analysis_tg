@@ -10,9 +10,5 @@ with open('chats.csv', 'r+', encoding="UTF-8") as df:
         st.write(line, category)
 
 
-def add(x, y):
-    return x + y
-
-
-def test_add():
-    assert add(3, 5) == 8
+def test_line():
+    assert line == str
