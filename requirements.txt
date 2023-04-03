@@ -1,5 +1,4 @@
-tensorflow
+tensorflow-cpu
 transformers
-httpx
 telethon
 streamlit
