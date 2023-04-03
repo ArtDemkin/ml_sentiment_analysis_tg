@@ -14,7 +14,7 @@ client.start()
 chats = []
 last_date = None
 chunk_size = 200
-groups=[]
+groups = []
 result = client(GetDialogsRequest(
             offset_date=last_date,
             offset_id=0,
