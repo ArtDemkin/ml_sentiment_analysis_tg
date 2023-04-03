@@ -8,4 +8,3 @@ with open('chats.csv', 'r+', encoding="UTF-8") as df:
         category = classifier([line])
         print(line, category)
         st.write(line, category)
-
