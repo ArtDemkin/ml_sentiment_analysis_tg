@@ -9,3 +9,6 @@ with open('chats.csv', 'r+', encoding="UTF-8") as df:
         print(line, category)
         st.write(line, category)
 
+
+def test_line():
+    assert type(line) == str
