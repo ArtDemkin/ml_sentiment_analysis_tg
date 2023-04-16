@@ -7,6 +7,7 @@ path_to_strings = 'chats.csv'
 
 
 def strings_analize():
+    global line
     with open(path_to_strings, 'r+', encoding="UTF-8") as df:
         for line in df:
             category = classifier([line])
